@@ -1,0 +1,9 @@
+demo:
+  build: .
+  working_dir: /usr/src
+  command: npm run serve
+  stdin_open: true
+  volumes:
+    - .:/usr/src
+  ports:
+    - 8080:8080
